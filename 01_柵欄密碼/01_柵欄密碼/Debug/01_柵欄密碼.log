@@ -1,0 +1,4 @@
+﻿  Source.c
+g:\cloud\github\c\cryptology\01_柵欄密碼\01_柵欄密碼\source.c(15): warning C4101: 'group': 未參考的區域變數
+  01_柵欄密碼.vcxproj -> G:\Cloud\GitHub\C\Cryptology\01_柵欄密碼\Debug\01_柵欄密碼.exe
+  01_柵欄密碼.vcxproj -> G:\Cloud\GitHub\C\Cryptology\01_柵欄密碼\Debug\01_柵欄密碼.pdb (Partial PDB)

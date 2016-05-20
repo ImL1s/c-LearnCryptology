@@ -1,11 +1,11 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 #define CHAR_LENGTH 100
 
 #include <stdio.h>
 #include <stdlib.h>
 
 
-// ³ÍÂÄ¸Ñ±K
+// å‡±è–©è§£å¯†
 void decode(char* c)
 {
 	for (int i = 0; i < CHAR_LENGTH; i++)
@@ -14,11 +14,11 @@ void decode(char* c)
 		c[i] --;
 	}
 
-	puts("¸Ñ±Kµ²ªG: \n");
+	puts("è§£å¯†çµæžœ: \n");
 	printf("%s \n", c);
 }
 
-// ³ÍÂÄ¥[±K
+// å‡±è–©åŠ å¯†
 void encrypt(char* c)
 {
 	for (int i = 0; i < CHAR_LENGTH; i++)
@@ -27,20 +27,20 @@ void encrypt(char* c)
 		c[i] ++;
 	}
 
-	puts("¥[±Kµ²ªG: \n");
+	puts("åŠ å¯†çµæžœ: \n");
 	printf("%s \n", c);
 }
 
 
 void enterSystem()
 {
-	puts("********** Åwªï¨Ï¥Î³ÍÂÄ¥[±K¨t²Î ********** \n");
-	puts("½Ð°Ý§A­n¥[±K(0)ÁÙ¬O¸Ñ±K(1)? (½Ð¿é¤J 0 ©Î¬O 1) \n");
+	puts("********** æ­¡è¿Žä½¿ç”¨å‡±è–©åŠ å¯†ç³»çµ± ********** \n");
+	puts("è«‹å•ä½ è¦åŠ å¯†(0)é‚„æ˜¯è§£å¯†(1)? (è«‹è¼¸å…¥ 0 æˆ–æ˜¯ 1) \n");
 
 	char option[100];
 	scanf("%s", &option);
 
-	puts("½Ð¿é¤J­n¥[±K/¸Ñ±Kªº©ú¤å: \n");
+	puts("è«‹è¼¸å…¥è¦åŠ å¯†/è§£å¯†çš„æ˜Žæ–‡: \n");
 	char ch[CHAR_LENGTH];
 	int succ = scanf("%s", &ch);
 
@@ -55,7 +55,7 @@ void enterSystem()
 		break;
 
 	default:
-		puts("¿é¤J¿ù»~... ½Ð­«·s¿é¤J");
+		puts("è¼¸å…¥éŒ¯èª¤... è«‹é‡æ–°è¼¸å…¥");
 		enterSystem();
 		break;
 	}
